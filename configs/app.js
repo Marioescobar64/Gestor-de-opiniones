@@ -6,7 +6,6 @@ import cors from 'cors';
 import morgan from 'morgan';
 import { corsOptions } from './cors-configuration.js';
 import { dbConnection } from './db.js';
-import { helmetConfiguration } from './helmet-configuration.js';
 import { errorHandler } from '../middleware/handle-error.js';
 
 // Rutas
@@ -17,16 +16,12 @@ const BASE_URL = '/getionopiniones/v1';
 
 // Configuracion de los middlewares (la aplicacion)
 const middlewares = (app) => {
-    app.use(helmet(helmetConfiguration));
     app.use(express.urlencoded({ extended: false, limit: '10mb'}));
     // esta linea le indica a express que los archivos tengan un limite de 10mb
     app.use(cors(corsOptions));
-
-    app.use(express.urlencoded({ extended: false, limit: '10mb'}));
  
     app.use(express.json({limit: '10mb'}));
     // cors utiliza la funcion que creamos en cors-configuration
-    app.use(requestLimit);
     // Morgan se encarga del manejo de errores
     app.use(morgan('dev'));
 }
