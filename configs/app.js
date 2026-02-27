@@ -11,6 +11,9 @@ import { errorHandler } from '../middleware/handle-error.js';
 // Rutas
 
 import userRoutes from '../src/user/user-router.js'
+import publicationRoutes  from '../src/publication/publication-router.js'
+import commentRoutes  from '../src/comment/comment-router.js'
+
 
 const BASE_URL = '/getionopiniones/v1';
 
@@ -30,6 +33,10 @@ const middlewares = (app) => {
 
 const routes =(app) => {
     app.use(`${BASE_URL}/usuario`, userRoutes);
+
+    app.use(`${BASE_URL}/publicacion`, publicationRoutes);
+
+    app.use(`${BASE_URL}/comentario`, commentRoutes);
 }
 
 // funcion para iniciar el servidor

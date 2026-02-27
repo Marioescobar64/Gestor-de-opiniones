@@ -23,6 +23,12 @@ const userSchema = new mongoose.Schema({
         maxLength: [100, 'El nombre del contacto no puede tener mas de 100 caracteres'],
     },
 
+    photo: {
+    type: String,
+    // valor por defecto
+    default: 'user/file',
+    },
+
 
     isActive: {
     type: Boolean,

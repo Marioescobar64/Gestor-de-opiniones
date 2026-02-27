@@ -21,7 +21,7 @@ export const dbConnection = async () => {
     });
 
     mongoose.connection.on('open', () => {
-      console.log('MongoDB | conectado a la base de datos Agenda-Wb 2 la vengaza');
+      console.log('MongoDB | conectado a la base de datos Gestion de opiniones');
     });
 
     mongoose.connection.on('reconnected', () => {

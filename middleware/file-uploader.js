@@ -6,6 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 import { extname } from 'path';
  
 dotenv.config();
+
+
  
 // Configuración de Cloudinary
 cloudinary.config({
@@ -73,6 +75,16 @@ export const uploadUserImage = createCloudinaryUploader(
 export const uploadTeamImage = createCloudinaryUploader(
     process.env.CLOUDINARY_TEAMS_FOLDER || 'opniones/teams'
 );
+
+export const uploadPublicationImage = createCloudinaryUploader(
+    process.env.CLOUDINARY_PUBLICATION_FOLDER || 'opiniones/fields'
+);
+
+
+export const uploadCommentImage = createCloudinaryUploader(
+    process.env.CLOUDINARY_PUBLICATION_FOLDER || 'opiniones/fields'
+);
+
  
 // Export cloudinary instance para usar en delete-file-on-error
 export { cloudinary };
