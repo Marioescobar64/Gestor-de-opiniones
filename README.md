@@ -1,8 +1,10 @@
 # Gestor-de-opiniones
 
-En es te programa para utilizarlo se necesita que de primero ponga pnpm install la terminal para poder descargar las depedencias
+En es te programa para utilizarlo se necesita que de primero ponga la terminal del visual studios code o la terminal de su dispositivo (Pero con este se debe colocar en la carpeta del proyecto Gestor-de-opiniones) para poder descargar las depedencias
 
-luego en la terminal escriba node index.js y estara corriendo
+ escriba en la terminal pnpm install
+
+luego en la terminal escriba node --use-system-ca index.js (esto se hace para que se pueda crear una imagen) y estara corriendo
 
 Luego en el postman tiene que poner esto http://localhost:3001/getionopiniones/v1
 
