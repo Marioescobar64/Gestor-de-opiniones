@@ -25,7 +25,7 @@ router.get('/:id', validateGetPublicationById, getPublicationById);
 // POST
 router.post(
   '/',
-  uploadPublicationImage.single('image'),
+  uploadPublicationImage.single('photo'),
   validateCreatePublication,
   createPublication
 );
@@ -33,7 +33,7 @@ router.post(
 // PUT
 router.put(
   '/:id',
-  uploadPublicationImage.single('image'),
+  uploadPublicationImage.single('photo'),
   validateUpdatePublication,
   updatePublication
 );

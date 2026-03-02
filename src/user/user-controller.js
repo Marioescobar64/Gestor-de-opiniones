@@ -159,7 +159,7 @@ export const changeUsuarioStatus = async (req, res) => {
     res.status(200).json({
       success: true,
       message: `Usuario ${action} exitosamente`,
-      data: usuario,
+      data: contacto,
     });
   } catch (error) {
     res.status(500).json({
