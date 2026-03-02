@@ -16,9 +16,11 @@ GET http://localhost:3001/getionopiniones/v1/usuario
 
 POST http://localhost:3001/getionopiniones/v1/usuario
 
-PUT http://localhost:3001/getionopiniones/v1/usuario
+PUT http://localhost:3001/getionopiniones/v1/usuario/id del dato creado
 
-DELETE http://localhost:3001/getionopiniones/v1/usuario
+PATCH http://localhost:3001/getionopiniones/v1/usuario/id del dato creado/active o deactivate
+
+En el Patch si el dato lo quiere desactivar ponga deactivate y si lo quiere activar active
 
 A Continuacion comment
 
@@ -27,10 +29,12 @@ Con esto hacer al comentario
 GET http://localhost:3001/getionopiniones/v1/comentario
 
  POST http://localhost:3001/getionopiniones/v1/comentario
+ 
+  PUT http://localhost:3001/getionopiniones/v1/comentario/id del dato creado
 
-  PUT http://localhost:3001/getionopiniones/v1/comentario
+  PATCH http://localhost:3001/getionopiniones/v1/comentario/id del dato creado/active o deactivate
 
-   DELETE http://localhost:3001/getionopiniones/v1/comentario
+En el Patch si el dato lo quiere desactivar ponga deactivate y si lo quiere activar active
 
    
 A Continuacion 
@@ -41,6 +45,9 @@ GET http://localhost:3001/getionopiniones/v1/publicacion
 
 POST http://localhost:3001/getionopiniones/v1/publicacion
 
-PUT http://localhost:3001/getionopiniones/v1/publicacion
+PUT http://localhost:3001/getionopiniones/v1/publicacion/id del dato creado
 
-DELETE http://localhost:3001/getionopiniones/v1/publicacion
+PATCH http://localhost:3001/getionopiniones/v1/publicacion/id del dato creado/active o deactivate
+
+
+En el Patch si el dato lo quiere desactivar ponga deactivate y si lo quiere activar active
